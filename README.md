@@ -3,4 +3,3 @@
 
 ## Your mom
 
-# FREE LIVES TO CLAIM --> https://freelives.net/

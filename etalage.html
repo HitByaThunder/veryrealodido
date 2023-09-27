@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.zoom {
+  padding: 50px;
+  background-image: url("https://images0.persgroep.net/rcs/Ud-Y91fnvBWW7kmd8a1qY3Xw2vg/diocontent/234544326/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8");
+  background-size: cover;
+  background-position: center;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  animation: myzoom2 1s;
+}
+
+.zoom:hover {
+  animation: myzoom 1s;
+  background-size: 110%;
+}
+
+@keyframes myzoom {
+  from { background-size: 100%;}
+  to { background-size: 110%;}
+}
+@keyframes myzoom2 {
+  from { background-size: 110%;}
+  to { background-size: 100%;}
+}
+</style>
+</head>
+<body>
+
+<h1>Zoom on Hover</h1>
+<p>Hover over the div element.</p>
+  
+<div class="zoom"></div>
+
+</body>
+</html>

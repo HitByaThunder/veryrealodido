@@ -9,35 +9,39 @@
 
 .zoom {
   padding: 50px;
-  background-image: url("https://shop.magenta.at/img/detail/4835_100035.png");
+  background-image: url("https://images.samsung.com/nl/smartphones/galaxy-s23/images/galaxy-s23-highlights-kv.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transition: transform .2s;
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 500px;
   margin: 0 auto;
   animation: myzoom2 1s;
 }
 
 .zoom:hover {
   animation: myzoom 1s;
-  background-size: 110%;
 }
 
 @keyframes myzoom {
-  from { background-size: 100%;}
-  to { background-size: 110%;}
+  from { width: 500px;
+  height: 500px;}
+  to { width: 550px;
+  height: 550px;}
 }
 @keyframes myzoom2 {
-  from { background-size: 110%;}
-  to { background-size: 100%;}
+  from {  width: 550px;
+  height: 550px;}
+  to {  width: 500px;
+  height: 500px;}
 }
 </style>
 </head>
 <body>
 
-<h1>Zoom on Hover</h1>
-<p>Hover over the div element.</p>
+<h1></h1>
+<p></p>
   
 <div class="zoom"></div>
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
-<title>Odido</title>
+<title>Odildo</title>
+<link rel="icon" type="image/x-icon" href="https://www.odido.nl/Assets/Lfwd/Favicons/favicon.ico">
 </head>
 
 <body>
@@ -11,21 +12,49 @@
 <br>
 <div id="advb">
   <div>
-    <h3>iPhone 15 Pro</h3>
-    <p>Nu bij Odido</p>
+    <br>
+    <img src="https://assets.odido.nl/600x150/1ed0bfeb05/titanium_logo_600x150.png" alt="titanium">
+    <p>              Nu bij Odido</p>
+    <br>
+    <a id="ip15bestel" href="/iphone_15_pro">Bestel Nu</a>
   </div>
   <div>
-    <p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIF.w7o6DfTMUkmi5aEJbf3Wgw%26pid%3DApi&f=1&ipt=50ad13f89da725fbbc1ecf9b61a46a0e11349b6861a07aa5539d6c331648494f&ipo=images" alt="iphone 15 pro">
+    <p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Ryd5gnswES0VJaApHM9s-AHaEK%26pid%3DApi&f=1&ipt=bc3b0c3da1eabb9d79eb78f43e76f01159180dfd969f97d766ec90b5bed904ad&ipo=images" alt="iphone 15 pro">
     </p>
   </div>
+</div>
+<div id="bstxt">
+  <h2>Onze Bestsellers</h2>
 </div>
   <br>
 <div id="bestsellers">
  
-  <img id="bs1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.worldatlas.com%2Fr%2Fw2000-h1125-q90%2Fupload%2F12%2Ff8%2F83%2Fcoffee-cup.jpg&f=1&nofb=1&ipt=53fd4509af685af0683bfc464da53643923a387ecc2443a6289ca2324e892f48&ipo=images">
-  <img id="bs2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.W1mrYsEm_2bcE3OBJK1F-gHaE8%26pid%3DApi&f=1&ipt=7dde1cc872e907b8a366b25dd9c707f54809a48ed8262f596fa2a37816917ed1&ipo=images">
-  <img id="bs3" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0mVozrsk7DCvzhATacdJ5QHaEo%26pid%3DApi&f=1&ipt=038f14581604ed119343e5def2c0e23a20c304da06a3f471c0a309023ede5e7a&ipo=images">  
+  <img id="bs1" class="zoom" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.worldatlas.com%2Fr%2Fw2000-h1125-q90%2Fupload%2F12%2Ff8%2F83%2Fcoffee-cup.jpg&f=1&nofb=1&ipt=53fd4509af685af0683bfc464da53643923a387ecc2443a6289ca2324e892f48&ipo=images">
+  <img id="bs2" class="zoom" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.W1mrYsEm_2bcE3OBJK1F-gHaE8%26pid%3DApi&f=1&ipt=7dde1cc872e907b8a366b25dd9c707f54809a48ed8262f596fa2a37816917ed1&ipo=images">
+  <img id="bs3" class="zoom" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.0mVozrsk7DCvzhATacdJ5QHaEo%26pid%3DApi&f=1&ipt=038f14581604ed119343e5def2c0e23a20c304da06a3f471c0a309023ede5e7a&ipo=images">  
  
+</div>
+<div id="advies">
+  <h3>Welk abonnement moet ik nemen?</h3>
+  <p>Geen punt, helpen we je bij.</p>
+  <form>
+    <p>Waar gebruik je je Mobile Verbinding voor?</p>
+    <input type="checkbox" id="chat" name="chat" value="Chatten/Whatsappen">
+    <label for="chat"> Chatten/Whatsappen</label><br>
+    <input type="checkbox" id="sm" name="sm" value="sm">
+    <label for="sm"> Social Media</label><br>
+    <input type="checkbox" id="game" name="game" value="game">
+    <label for="game"> Gamen</label><br>
+    <input type="checkbox" id="stream" name="stream" value="stream">
+    <label for="game"> Streamen</label>
+
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+  </form>
 </div>
 </body>
 
@@ -41,6 +70,15 @@
 #bestsellers{
   display: flex;
   justify-content: space-around;
+}
+#ip15bestel{
+  padding: 200, 100;
+  background-color: blueviolet;
+}
+#bstxt {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
 }
     a{
         text-decoration: none;
@@ -77,26 +115,23 @@
 
     .zoom {
   padding: 50px;
-  background-image: url("https://images.samsung.com/nl/smartphones/galaxy-s23/images/galaxy-s23-highlights-kv.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: transform .2s;
-  width: 500px;
-  height: 500px;
+  width: 256px;
+  height: 256px;
   margin: 0 auto;
   animation: myzoom2 1s;
 }
 .zoom {
   padding: 50px;
-  background-image: url("https://images.samsung.com/nl/smartphones/galaxy-s23/images/galaxy-s23-highlights-kv.jpg");
-  background-image: url("https://images.samsung.com/nl/smartphones/galaxy-s23/images/galaxy-s23-highlights-kv.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   transition: transform .2s;
-  width: 500px;
-  height: 500px;
+  width: 256px;
+  height: 256px;
   margin: 0 auto;
   animation: myzoom2 1s;
 }
@@ -105,16 +140,16 @@
 }
 
 @keyframes myzoom {
-  from { width: 500px;
-  height: 500px;}
-  to { width: 550px;
-  height: 550px;}
+  from { width: 256px;
+  height: 256px;}
+  to { width: 306px;
+  height: 306px;}
 }
 @keyframes myzoom2 {
-  from {  width: 550px;
-  height: 550px;}
-  to {  width: 500px;
-  height: 500px;}
+  from {  width: 306px;
+  height: 306px;}
+  to {  width: 256px;
+  height: 256px;}
 }
 
 </style>

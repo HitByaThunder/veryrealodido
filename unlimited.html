@@ -1,13 +1,16 @@
-<!DOCTYPE html>
 <html>
-    <head>
-<title>Unlimited: Onbeperkt internet + bellen en sms'en | Odido</title>
-<style>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unlimited: Onbeperkt internet + bellen en sms'en | Odido </title>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
     .button {
   background-color: #000000;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 7px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -15,23 +18,47 @@
   margin: 4px 2px;
   cursor: pointer;
     }
-    #box {
-  background-color: rgb(200, 200, 200);
-  width: 300px;
-  border: 20px rgb(0, 0, 0);
-  padding: 50px;
-  margin: 20px;
-}
-
-</style>
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
     </head>
     <body>
-
-        <div id="box">
-<h1>Unlimited voor iedereen.<br></h1>
-<p>Met 4 Unlimited abonnementen,<br>kies je het Unlimited abonnement dat bij je past.</p>
-<p>-Onbeperkt Internet + Bellen.<br>-Supersnel 5G tot wel 1 Gbit/s.<br>-Bij Odido kan je kiezen uit veel leuke <br>Extra’s.<br></p>
-<div class="a"><a href="#" class="button">Bestel Nu ---></a></div>
-   </div>
-   </body>
-</html>
+    
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>Unlimited voor iedereen.</h2>
+        <p>Met 4 Unlimited abonnementen, kies je het Unlimited abonnement<br> dat bij je past.</p>
+        <p>-Onbeperkt Internet + Bellen.<br>-Supersnel 5G tot wel 1 Gbit/s.<br>-Bij Odido kan je kiezen uit veel leuke <br>Extra’s.<br></p>
+       <div class="button"><a href="#" class="button">Bestel Nu ---></a></div>
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2>Unlimited Start: €15,00/mnd</h2>
+        <h3><br>-Onbeperkt Internet + Bellen.<br>-Snelheid tot 175 Mbit/s<br>Buitenland Internet + Bellen<br><br><br></h3>
+        <div class="button"><a href="#" class="button">Bekijk Nu ---></a></div>
+      </div>
+      <div class="column" style="background-color:#ccc;">
+        <h2>Unlimited Premium: €20,50/mnd</h2>
+        <h3><br>-Tot 3 Extra's naar keuze<br>-Onbeperkt Internet + Bellen.<br>-Snelheid tot 1 Gbit/s<br>Buitenland Internet + Bellen<br><br></h3>
+        <div class="button"><a href="#" class="button">Bekijk Nu ---></a></div>
+      </div>
+    </div>
+     </body></html>

@@ -25,6 +25,28 @@
   cursor: pointer;
     }
 
+    #one {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
     /* Create three equal columns that floats next to each other */
     .column {
       float: left;
@@ -45,13 +67,31 @@
       .column {
         width: 100%;
       }
+      .box {
+  width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0px;
+}
     }
     </style>
     </head>
-
-    <body> 
-      <img src="odido-fake-logo1.png" alt="Logo" class="center">
+  
+    <body>
       
+      <div style="text-align: center;">
+      <img width="400" src="odido fake logo.png">
+      </div>
+      <div style="text-align: left;">
+      <ul id="one">
+        <li id="three"><a class="active" href="#home">Home</a></li>
+        <li id="three"><a href="#news">News</a></li>
+        <li id="three"><a href="#contact">Contact</a></li>
+        <li id="three"><a href="#about">About</a></li>
+      </ul> 
+    </div>
+    
     <div class="row">
       <div class="column" style="background-color:#aaa;">
         <h2>Unlimited voor iedereen.</h2>
